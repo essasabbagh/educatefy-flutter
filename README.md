@@ -1,4 +1,4 @@
-# Code Expert Flutter Template
+# Educatefy Flutter App
 
 ![Logo](./assets/images/logo_full.png)
 
