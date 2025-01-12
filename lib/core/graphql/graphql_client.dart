@@ -4,8 +4,8 @@ class GraphQLService {
   GraphQLService();
 
   GraphQLClient createClient() {
-    const String apiUrl = 'https://api.github.com/graphql';
-    const String authToken = 'YOUR_GITHUB_TOKEN'; // Replace with your token
+    const String apiUrl = 'http://192.168.1.6:9090/graphql/';
+    const String authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRhMzY0NDUzLTNmZWItNDI1MC04YjM5LTNmNWRlOWM4YTg2MiJ9.5ZHeh7jJmrsKTfEzgS-8QbKe83O2ke_1iDzLvDYIdlQ'; // Replace with your token
 
     final HttpLink httpLink = HttpLink(apiUrl);
 

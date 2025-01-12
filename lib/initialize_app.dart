@@ -23,9 +23,9 @@ Future<void> initializeApp() async {
   // Allow reassignment of values in the locator
   locator.allowReassignment = true;
 
-  locator.registerSingleton<FileService>(FileService());
+  // locator.registerSingleton<FileService>(FileService());
 
-  await locator.get<FileService>().init();
+  // await locator.get<FileService>().init();
 
   /* 
   /// Initilize Hive Database
@@ -39,7 +39,7 @@ Future<void> initializeApp() async {
   // Initialize GetStorage for local storage
   final storage = GetStorage(
     'AppStorage',
-    locator<FileService>().supportPath,
+    // locator<FileService>().supportPath,
   );
 
   await storage.initStorage;

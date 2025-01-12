@@ -31,5 +31,8 @@
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "allDocuments"
-  }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
 }
