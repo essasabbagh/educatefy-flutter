@@ -53,6 +53,13 @@ class HomeScreen extends ConsumerWidget {
               },
               child: const Text('pagintion'),
             ),
+            TextButton(
+              onPressed: () {
+                // GitHubReposScreen
+                context.pushNamed('GitHubRepos');
+              },
+              child: const Text('GitHubRepos'),
+            ),
           ],
         ),
       ),

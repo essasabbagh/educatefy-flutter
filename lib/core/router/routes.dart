@@ -5,6 +5,7 @@ import 'package:template/features/auth/pages/login_screen.dart';
 import 'package:template/features/auth/pages/password_reset_screen.dart';
 import 'package:template/features/auth/pages/register_screen.dart';
 import 'package:template/features/category/category_screen.dart';
+import 'package:template/features/git/github_repos_screen.dart';
 import 'package:template/features/help/pages/help_screen.dart';
 import 'package:template/features/home/home.dart';
 import 'package:template/features/notification/notification_screen.dart';
@@ -112,6 +113,16 @@ List<RouteBase> routes = <RouteBase>[
             pageBuilder: (context, state) {
               return const NoTransitionPage(
                 child: UserListScreen(),
+              );
+            },
+          ),
+          GoRoute(
+            name: 'GitHubRepos',
+            path: 'GitHubRepos',
+            parentNavigatorKey: shellNavigatorKey,
+            pageBuilder: (context, state) {
+              return const NoTransitionPage(
+                child: GitHubReposScreen(),
               );
             },
           ),
